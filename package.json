@@ -1,0 +1,49 @@
+{
+  "name": "leaflet-transform",
+  "version": "1.0.0",
+  "description": "Scale/rotate/move plugin for leaflet vector layers",
+  "main": "src/index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "webpack",
+    "prepublish": "npm run clean && npm run build",
+    "preversion": "npm test && npm run build",
+    "lint": "standard index.js",
+    "start": "budo --live",
+    "test": "npm run lint"
+  },
+  "keywords": [
+    "leaflet",
+    "vector",
+    "scale",
+    "resize",
+    "rotate",
+    "move",
+    "geometry",
+    "edit"
+  ],
+  "author": "Alexander Milevski <info@w8r.name>",
+  "license": "MIT",
+  "devDependencies": {
+    "budo": "^7.1.0",
+    "css-loader": "^0.28.7",
+    "file-loader": "^0.11.2",
+    "rimraf": "^2.6.1",
+    "standard": "^5.4.1",
+    "style-loader": "^0.18.1",
+    "webpack": "^3.5.5"
+  },
+  "dependencies": {
+    "css-img-datauri-stream": "^0.1.5",
+    "cssify": "^0.8.0",
+    "leaflet": ">=0.7.7 <2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidbrochart/leaflet-transform.git"
+  },
+  "bugs": {
+    "url": "https://github.com/davidbrochart/leaflet-transform/issues"
+  },
+  "homepage": "https://github.com/davidbrochart/leaflet-transform#readme"
+}
