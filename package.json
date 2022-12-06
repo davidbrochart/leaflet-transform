@@ -25,7 +25,7 @@
   "author": "Alexander Milevski <info@w8r.name>",
   "license": "MIT",
   "devDependencies": {
-    "budo": "^7.1.0",
+    "budo": "^11.8.4",
     "css-loader": "^0.28.7",
     "file-loader": "^0.11.2",
     "rimraf": "^2.6.1",
